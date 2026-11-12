@@ -60,8 +60,19 @@ jeśli obie wartości nie są równe.
   zaproponuje dodanie biblioteki JUnit 5 do projektu; zgódź się. Testy
   uruchamiamy, klikając klasę testową (albo cały katalog `test`) prawym
   przyciskiem i wybierając *Run As > JUnit Test*.
-  
-- **Z wiersza poleceń** (dla osób, które nie korzystają z Eclipse):
+
+- **W VS Code** potrzebne jest rozszerzenie *Extension Pack for Java*
+  (Microsoft). Jeśli masz zainstalowane również rozszerzenie *Java*
+  firmy Oracle, wyłącz je, bo oba rozszerzenia konkurują o
+  obsługę plików `.java`. Pobierz plik
+  [junit-platform-console-standalone-1.14.4.jar](https://repo1.maven.org/maven2/org/junit/platform/junit-platform-console-standalone/1.14.4/junit-platform-console-standalone-1.14.4.jar)
+  do katalogu `lib` w projekcie (VS Code sam dołącza do projektu pliki
+  `lib/*.jar`). Uważaj, żeby plik testu znalazł się w katalogu
+  `test/counters`, zgodnie z nazwą pakietu. Testy uruchamiamy zielonymi
+  trójkątami obok adnotacji `@Test` albo w widoku *Testing* (ikona
+  kolby na pasku po lewej).
+
+- **Z wiersza poleceń** (dla osób, które nie korzystają z IDE):
   pobierz plik
 	  [junit-platform-console-standalone-1.14.4.jar](https://repo1.maven.org/maven2/org/junit/platform/junit-platform-console-standalone/1.14.4/junit-platform-console-standalone-1.14.4.jar)
   i umieść go w katalogu, w którym znajdują się katalogi `counters`,
